@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Demo</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<table class="header-container">
+<tr><td>
+<table class="header-holder" align="center" >
+<tr><td>
+<div class="header" style="">
+  <%= image_tag "buclogo.png" ,:class => "logo" %>
+
+    <p  class="p-features"><a href="#">Features</a></p>
+      <p  class="p-pricing"><a href="#">Pricing</a></p>
+      <p  class="p-helpcenter"><a href="#">Help Centre</a></p>
+      <p  class="p-signin"><a href="#">Sign In</a></p>
+    </div>
+</td></tr></table>
+</td></tr></table>
+
+<%= yield %>
+
+<table class="footer-container"  >
+<tr><td>
+<table class="footer-holder" align="center" >
+<tr><td>
+
+<!--Start of footer -->
+ <div class="footer" >
+ <p class="p-news" ><a href="#">News</a>
+ <span class="p-legal"><a href="#">Legal</a></span>
+      <span class="p-contact"><a href="#">Contact Us</a></span>
+      <span class="p-about" ><a href="#">About Us</a></span>
+	   <span class="p-files" >Keep your files in NZ</span>
+	   <%= image_tag "newzealand.png" %>
+  </div>
+  <!--End of footer -->
+</td></tr></table>
+</td></tr></table>
+</body>
+</html>
+
+</body>
+</html>
